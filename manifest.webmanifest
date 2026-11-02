@@ -1,7 +1,7 @@
 {
-  "name": "Kellie Workout Plan — Strength & Walking Journal",
+  "name": "Kellie Workout Plan \u2014 Strength & Walking Journal",
   "short_name": "Kellie Workout",
-  "description": "Two weekly full-body strength sessions, four walking days, and private workout tracking.",
+  "description": "Unlimited strength/walking history, rotating exercise plans, video demos and knee-conscious training.",
   "id": "./",
   "start_url": "./index.html",
   "scope": "./",
@@ -9,7 +9,17 @@
   "background_color": "#fff8fb",
   "theme_color": "#9c155f",
   "icons": [
-    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }

@@ -1,53 +1,26 @@
-KELLIE WORKOUT PLAN — iPHONE SETUP WITH GITHUB PAGES
+KELLIE WORKOUT PLAN • V3 — iPhone + GitHub Pages
 
-WHAT IS INCLUDED
-- index.html: complete interactive workout tracker with exercise illustrations and local logging
-- manifest.webmanifest: app name and iPhone/web-app metadata
-- sw.js: caches the app for offline use after the first online visit
-- icon-192.png and icon-512.png: magenta app icons with the letter K
+NEW: Videos for each exercise, Routine Manager, unlimited weekly logs, historical exercise snapshots, chart navigation and paginated history.
 
-IMPORTANT: Upload ALL FIVE files individually into the ROOT of a GitHub repository.
-Do not upload the ZIP. README_SETUP.txt is optional and is not required online.
+IF UPDATING THE EXISTING GITHUB PAGES APP:
+1. BACK UP YOUR WORKOUT DATA FIRST: open the old app > Progress > Export JSON backup. Save it to Files.
+2. In Safari, open github.com and sign in. Open your Kellie-Workout-Plan repository.
+3. Replace the five existing website files with the five new files from this folder:
+   index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png
+   GitHub mobile tip: navigate to a file, use the pencil icon (Edit) or upload through Add file > Upload files in Desktop Website mode. Commit changes to main.
+4. Open repository Settings > Pages. Source: Deploy from a branch; branch main; folder /(root). If already enabled, leave it alone.
+5. Open https://YOUR-USERNAME.github.io/Kellie-Workout-Plan/ in Safari. Refresh if necessary; reopen Home Screen icon.
+6. Your existing workout records are preserved on the SAME browser/origin thanks to the unchanged localStorage data key. If data do not appear, use Progress > Restore from JSON backup (back up current data before importing).
+7. In app, select Routines > Create new phase > choose start date / review weeks > edit, reorder, remove, or add exercises.
+8. Tap the exercise picture or video button to watch/find demonstration videos; internet required to load videos.
+9. Progress > Earlier 8 weeks: review older charts. Show more lists older workouts; there is no fixed week limit.
 
-NEW GITHUB REPOSITORY — STEP BY STEP
-1. On a computer or in iPhone SAFARI (not the GitHub app), sign in at github.com.
-2. Tap/click + > New repository.
-3. Repository name: Kellie-Workout-Plan. Select Public and Create repository.
-4. Open the new repo. Choose Add file > Upload files (or the initial upload link).
-5. Select all five individual files from the extracted ZIP folder. Do NOT upload the ZIP.
-6. Use Commit changes to save the files directly to the main branch.
-7. Open repository Settings > Pages (Settings may be inside the ... menu on mobile).
-8. Under Build and deployment: Source = Deploy from a branch; Branch = main;
-   Folder = /(root). Select Save.
-9. Once published, open the Pages link displayed under Settings > Pages.
-   Its usual format is https://YOUR_USERNAME.github.io/Kellie-Workout-Plan/
-10. On iPhone, open THAT LIVE SITE in Safari. Tap Share > Add to Home Screen.
-    If offered, enable Open as Web App. Tap Add.
-11. Launch the new Kellie Workout Plan app icon. Log your workout dates, weights,
-    reps, walks and notes. Changes auto-save on this iPhone.
+IF CREATING A NEW GITHUB SITE:
+1. Create public GitHub repository Kellie-Workout-Plan.
+2. Upload the five files above individually (not the ZIP) and commit to main.
+3. Settings > Pages > Deploy from a branch > main > /(root) > Save.
+4. Open your published GitHub Pages URL in Safari > Share > Add to Home Screen > Add.
 
-IF YOU ALREADY CREATED A 'MAGENTA-FIT' REPOSITORY
-- You may keep that repo and update/overwrite the five files, instead of making a
-  new one. Its existing GitHub Pages website address stays the same.
-- OR create a new repo with the Kellie-Workout-Plan name using the steps above.
-- The app's underlying saved-data key is intentionally unchanged for continuity,
-  but moving between browser, website and Home Screen app can still lose access to
-  existing locally stored workouts. Export JSON FIRST if your old app has logs.
-- After uploading renamed files, refresh the live site; if the former app persists,
-  close and reopen the website or clear ONLY the relevant cache after backing up.
+IMPORTANT: Workout history lives ONLY in browser storage, NOT GitHub. Updating GitHub code does not synchronize data between devices. Periodically export JSON backups into iPhone Files/iCloud Drive. Restoring JSON replaces all local records, so make a backup first. Avoid changing the repository URL/domain after logging workouts; browser storage is tied to that site's origin. Even without a hardcoded week count, device storage is finite.
 
-DATA & PRIVACY
-- The exercise plan and app files are public when using a public GitHub repository.
-- Workout data are saved locally in your browser/app, NOT in your GitHub account.
-- iPhone and computer journals do not sync automatically.
-- The app has Progress > Export JSON backup and Import JSON backup.
-- Back up regularly. NEVER upload workout JSON or CSV history to a public repo.
-- Avoid clearing website data or deleting the Home Screen app without exporting.
-
-WEEKLY PLAN
-Mon Strength A; Tue Walk 30+ min; Wed Walk 30+ min; Thu Strength B;
-Fri Walk 30+ min; Sat Walk 30+ min; Sun rest / gentle mobility.
-
-The plan is general educational guidance. Stop an exercise that causes knee pain.
-Check with a healthcare or physical therapy professional if knees buckle,
-swell, lock or cause persistent discomfort.
+SAFETY: Pain-free exercise only. Knee weakness, swelling, locking, or giving way should be assessed by a clinician or physical therapist. Linked exercise videos are external demonstrations, not individualized medical advice.
