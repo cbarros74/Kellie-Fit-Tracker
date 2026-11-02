@@ -1,26 +1,17 @@
-KELLIE WORKOUT PLAN • V3 — iPhone + GitHub Pages
+KELLIE WORKOUT PLAN — V3.1 VIDEO FIX
 
-NEW: Videos for each exercise, Routine Manager, unlimited weekly logs, historical exercise snapshots, chart navigation and paginated history.
+THE SIMPLEST UPDATE TO AN EXISTING GITHUB PAGES APP
+1. In your OLD app, go to Progress > Export JSON backup and save it in iPhone Files.
+2. In Safari open github.com and go to your existing Kellie-Workout-Plan repository.
+3. Replace the ROOT index.html with this new index.html. It MUST be named exactly index.html — not Kellie_Workout_Plan_V3_index.html or index(1).html.
+4. Replace sw.js too (new cache version). You do not need to change the website address or create a new GitHub repo.
+5. Commit your changes to the main branch, then open the existing GitHub Pages website in Safari. Reload the tab (or open website with ?version=3.1 to bypass an old page).
+6. The Home page should display a big pink OPEN ALL EXERCISE VIDEOS button and the footer should say Version 3.1 · Video update.
+7. Open your original installed Home Screen icon. If it still shows the old page, fully close the app and reopen, or visit Safari URL and use Add to Home Screen if necessary.
+8. Tap Strength A or Strength B to see a large magenta WATCH VIDEO button underneath each exercise description, or tap ▶ Videos in the navigation bar.
 
-IF UPDATING THE EXISTING GITHUB PAGES APP:
-1. BACK UP YOUR WORKOUT DATA FIRST: open the old app > Progress > Export JSON backup. Save it to Files.
-2. In Safari, open github.com and sign in. Open your Kellie-Workout-Plan repository.
-3. Replace the five existing website files with the five new files from this folder:
-   index.html, manifest.webmanifest, sw.js, icon-192.png, icon-512.png
-   GitHub mobile tip: navigate to a file, use the pencil icon (Edit) or upload through Add file > Upload files in Desktop Website mode. Commit changes to main.
-4. Open repository Settings > Pages. Source: Deploy from a branch; branch main; folder /(root). If already enabled, leave it alone.
-5. Open https://YOUR-USERNAME.github.io/Kellie-Workout-Plan/ in Safari. Refresh if necessary; reopen Home Screen icon.
-6. Your existing workout records are preserved on the SAME browser/origin thanks to the unchanged localStorage data key. If data do not appear, use Progress > Restore from JSON backup (back up current data before importing).
-7. In app, select Routines > Create new phase > choose start date / review weeks > edit, reorder, remove, or add exercises.
-8. Tap the exercise picture or video button to watch/find demonstration videos; internet required to load videos.
-9. Progress > Earlier 8 weeks: review older charts. Show more lists older workouts; there is no fixed week limit.
+IF MAKING A NEW SITE: Create a public GitHub repository, upload the five files index.html, sw.js, manifest.webmanifest, icon-192.png, icon-512.png (not the ZIP), then Settings > Pages > Deploy from a branch > main > /(root) > Save. Open URL in Safari > Share > Add to Home Screen.
 
-IF CREATING A NEW GITHUB SITE:
-1. Create public GitHub repository Kellie-Workout-Plan.
-2. Upload the five files above individually (not the ZIP) and commit to main.
-3. Settings > Pages > Deploy from a branch > main > /(root) > Save.
-4. Open your published GitHub Pages URL in Safari > Share > Add to Home Screen > Add.
+Videos require an internet connection. Nine exercises link directly to a selected YouTube demonstration. Others use a YouTube results page so you can pick a matching demo. You can change any link in Routines > Edit exercise, sets and video link.
 
-IMPORTANT: Workout history lives ONLY in browser storage, NOT GitHub. Updating GitHub code does not synchronize data between devices. Periodically export JSON backups into iPhone Files/iCloud Drive. Restoring JSON replaces all local records, so make a backup first. Avoid changing the repository URL/domain after logging workouts; browser storage is tied to that site's origin. Even without a hardcoded week count, device storage is finite.
-
-SAFETY: Pain-free exercise only. Knee weakness, swelling, locking, or giving way should be assessed by a clinician or physical therapist. Linked exercise videos are external demonstrations, not individualized medical advice.
+HISTORY: Retains localStorage key magentaFitJournal_v1, so changing the code on the same URL/device should keep local history; export a JSON backup as protection. All weeks and routine phases are supported within normal device storage limits. GitHub does NOT store your workout data or synchronize it between devices.
